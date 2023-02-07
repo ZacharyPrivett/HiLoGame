@@ -1,8 +1,12 @@
 import java.util.Scanner;
-
+import javax.swing.*;
 
 public class HiLo {
     public static void main(String[] args) {
+
+        JFrame frame = new HiLoFrame("HiLo Guessing Game");
+        frame.setVisible(true);
+
         Scanner scan = new Scanner(System.in);
         String playAgain = "";
         do {
